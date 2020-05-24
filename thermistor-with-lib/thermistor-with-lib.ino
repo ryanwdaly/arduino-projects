@@ -78,7 +78,7 @@
 
 // Thermistor object
 THERMISTOR thermistor(NTC_PIN,        // Analog pin
-                      7500,          // Nominal resistance at 25 ºC
+                      1220,          // Nominal resistance at 25 ºC
                       3950,           // thermistor's beta coefficient
                       9950);         // Value of the series resistor
 
@@ -92,6 +92,7 @@ uint16_t temp;
  */
 void setup()
 {
+ 
   Serial.begin(9600);
 }
 
